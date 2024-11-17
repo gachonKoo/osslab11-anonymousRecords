@@ -1,7 +1,8 @@
 from geo.utils import calculate_area
+import sys
 
 def main():
-    radius = 5.0
+    radius = float(sys.stdin.read().strip())
     expected_area = 314.1592653589793
     calculated_area = calculate_area(radius)
     
